@@ -1,0 +1,116 @@
+* {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(223, 48%, 38%, 0.86);
+
+}
+
+h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 2.6rem;
+    color: white;
+}
+
+
+
+#botonAgregar {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    color: gold;
+}
+
+#botonAgregar:hover {
+    background-color: gold;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#entradaDatos {
+    width: 200px;
+    height: 20px;
+}
+
+.conteElementos ul {
+    display: grid !important;
+    grid-template-columns: 3.8fr 0.1fr !important;
+    margin-right: 4px;
+    list-style: none;
+
+
+}
+
+.listaelement {
+    background-color: aliceblue;
+    padding: 1px;
+    margin: 3px;
+    width: 200px;
+    height: 20px;
+    border-radius: 6px;
+
+
+}
+
+.cerrar {
+    background-color: rgba(240, 240, 240, 0.14);
+    animation: cerrando 3s ease-in-out;
+}
+
+@keyframes cerrando {
+    0% {
+        width: 200px;
+    }
+
+    50% {
+        color: rgba(128, 128, 128, 0.377);
+    }
+
+    100% {
+        width: 0px;
+        color: transparent;
+    }
+}
+
+
+.deletebutton {
+    margin-top: 4px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(221, 120, 130);
+    color: gold;
+
+}
+
+.desaparecer {
+    animation: desaparecer 2s;
+}
+
+@keyframes desaparecer {
+    0% {
+        transform: rotate(-360deg);
+        background-color: red;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: transparent;
+        border: transparent;
+        color: transparent;
+    }
+
+}
